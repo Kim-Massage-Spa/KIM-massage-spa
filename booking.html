@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIM Massage Spa — Book an Appointment</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f8f3f0;color:#2d2420}
+  .wrap{max-width:680px;margin:auto;padding:24px 16px 50px}
+  .card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 8px 30px rgba(0,0,0,.09)}
+  h1{text-align:center;margin:0 0 8px;font-size:30px}
+  .sub{text-align:center;color:#756963;margin:0 0 25px}
+  label{display:block;font-weight:700;margin:15px 0 7px}
+  input,select,textarea{width:100%;padding:13px;border:1px solid #d8cec8;border-radius:10px;font-size:16px;background:#fff}
+  textarea{min-height:90px;resize:vertical}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  button{width:100%;margin-top:22px;padding:15px;border:0;border-radius:12px;background:#7b4f3d;color:#fff;font-size:17px;font-weight:700;cursor:pointer}
+  button:hover{background:#654031}
+  .contact{text-align:center;margin-top:20px;font-size:14px;color:#756963}
+  .contact a{color:#7b4f3d;text-decoration:none}
+  .notice{background:#f5ece7;border-radius:10px;padding:12px;margin-top:15px;font-size:13px;line-height:1.5}
+  @media(max-width:520px){.row{grid-template-columns:1fr}.card{padding:21px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>KIM Massage Spa</h1>
+    <p class="sub">Book your appointment</p>
+
+    <form id="bookingForm">
+      <label for="name">Full Name *</label>
+      <input id="name" name="name" required>
+
+      <label for="phone">Phone Number *</label>
+      <input id="phone" name="phone" type="tel" required>
+
+      <div class="row">
+        <div>
+          <label for="date">Preferred Date *</label>
+          <input id="date" name="date" type="date" required>
+        </div>
+        <div>
+          <label for="time">Preferred Time *</label>
+          <input id="time" name="time" type="time" required>
+        </div>
+      </div>
+
+      <label for="service">Massage Service *</label>
+      <select id="service" name="service" required>
+        <option value="">Select a service</option>
+        <option>Signature Massage</option>
+        <option>Swedish Massage</option>
+        <option>Deep Tissue Massage</option>
+        <option>Therapeutic Massage</option>
+        <option>Cupping Massage</option>
+      </select>
+
+      <label for="duration">Duration *</label>
+      <select id="duration" name="duration" required>
+        <option value="">Select duration</option>
+        <option>30 minutes</option>
+        <option>60 minutes</option>
+        <option>90 minutes</option>
+        <option>120 minutes</option>
+      </select>
+
+      <label for="guests">Number of Guests *</label>
+      <select id="guests" name="guests" required>
+        <option>1</option><option>2</option><option>3</option><option>4</option>
+      </select>
+
+      <label for="type">Appointment Type *</label>
+      <select id="type" name="type" required>
+        <option value="">Select appointment type</option>
+        <option>Incall</option>
+        <option>Outcall</option>
+      </select>
+
+      <label for="location">Location (required for Outcall)</label>
+      <input id="location" name="location" placeholder="Enter outcall address if applicable">
+
+      <label for="requests">Special Requests</label>
+      <textarea id="requests" name="requests" placeholder="Anything we should know?"></textarea>
+
+      <div class="notice">
+        Your booking request is not confirmed until KIM Massage Spa confirms the date and time with you.
+      </div>
+
+      <button type="submit">Request Appointment</button>
+    </form>
+
+    <div class="contact">
+      <strong>Call:</strong> <a href="tel:+13312180449">(331) 218-0449</a><br>
+      <strong>Email:</strong> <a href="mailto:kimmassagespa2@gmail.com">kimmassagespa2@gmail.com</a><br>
+      <strong>Instagram:</strong> @KIM_MASSAGE.SPA
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("date").min = new Date().toISOString().split("T")[0];
+
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+  e.preventDefault();
+
+  const f = new FormData(this);
+  const msg =
+`Hello KIM Massage Spa, I would like to request an appointment.
+
+Name: ${f.get("name")}
+Phone: ${f.get("phone")}
+Date: ${f.get("date")}
+Time: ${f.get("time")}
+Massage service: ${f.get("service")}
+Duration: ${f.get("duration")}
+Number of guests: ${f.get("guests")}
+Appointment type: ${f.get("type")}
+Location: ${f.get("location") || "N/A"}
+Special requests: ${f.get("requests") || "None"}`;
+
+  // Opens WhatsApp with the completed booking request.
+  const whatsappNumber = "15593385353";
+  window.location.href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(msg);
+});
+</script>
+</body>
+</html>
