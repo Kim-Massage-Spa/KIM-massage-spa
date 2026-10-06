@@ -1,295 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="KIM Massage Spa in Iowa City — massage services, booking, contact information and spa policies.">
-  <meta name="theme-color" content="#111111">
-  <title>KIM Massage Spa | Iowa City</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KIM Massage Spa | Services, Prices & Terms</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#2b2724;background:#f5f0e8;line-height:1.55}
+header{background:linear-gradient(135deg,#1c1208,#5b3a0b,#1c1208);color:#f7d878;text-align:center;padding:46px 18px 38px}
+.logo{font-size:clamp(42px,12vw,76px);font-weight:800;letter-spacing:8px;margin:0}
+.tag{font-size:clamp(16px,4vw,22px);letter-spacing:3px;margin-top:5px}
+.container{max-width:1050px;margin:auto;padding:22px 14px 45px}
+.card,.menu-section{background:#fff;border-radius:20px;padding:24px;margin:18px 0;box-shadow:0 7px 25px #00000012}
+.deposit{text-align:center;background:#f4e5ca;border:1px solid #d8b96a}
+.deposit strong{font-size:36px;color:#8a5a05}
+h2{color:#684307;margin-top:0;border-bottom:2px solid #d8b96a;padding-bottom:10px}
+.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:650px}th,td{padding:11px 10px;border-bottom:1px solid #eee;text-align:left;vertical-align:top}th{background:#f5efe4;color:#5b3a0b}td:last-child,th:last-child{font-weight:700;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.method{padding:15px;background:#f7f3ed;border-radius:12px;text-align:center;font-weight:700}
+.cta{display:inline-block;background:#8b6516;color:#fff;text-decoration:none;padding:13px 22px;border-radius:30px;font-weight:700;margin:10px 6px 0}.wa{background:#1faa59}.wa:hover{filter:brightness(.95)}
+.small{color:#6d6862;font-size:14px}footer{text-align:center;padding:25px;color:#756e66}
+@media(max-width:700px){.card,.menu-section{padding:18px}table{min-width:590px}}
+</style></head>
 <body>
-  <header class="site-header">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="KIM Massage Spa home">
-        <span class="brand-mark">K</span>
-        <span>KIM <small>MASSAGE SPA</small></span>
-      </a>
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#booking">Book</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="#policies">Policies</a>
-      </nav>
-    </div>
-  </header>
+<header><h1 class="logo">KIM</h1><div class="tag">MASSAGE SPA</div><p>Relax • Rejuvenate • Restore</p></header>
+<main class="container">
+<div class="card deposit"><div>Appointment Deposit</div><strong>$50</strong><div>Required to secure and confirm your appointment.</div></div>
+<div class="card"><h2>Massage Services & Prices</h2><p class="small">Please review our services, durations and prices below.</p></div>
 
-  <main>
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <p class="eyebrow">RELAX • RESTORE • RECHARGE</p>
-        <h1>Welcome to <span>KIM Massage Spa</span></h1>
-        <p class="hero-text">A peaceful place to slow down, relax and enjoy a professional massage experience in Iowa City.</p>
-        <div class="hero-buttons">
-          <a class="btn btn-gold" href="#booking">Book an Appointment</a>
-          <a class="btn btn-outline" href="tel:+15593385353">Call (559) 338-5353</a>
-        </div>
-        <p class="location-line">700 S Dubuque St, Iowa City, IA 52240</p>
-      </div>
-    </section>
-
-    <section class="quick-actions">
-      <div class="container action-grid">
-        <a href="#booking"><strong>📅 Book</strong><span>Request an appointment</span></a>
-        <a href="https://wa.me/15593385353?text=Hello%20KIM%20Massage%20Spa%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener"><strong>💬 WhatsApp</strong><span>Chat with us</span></a>
-        <a href="tel:+13312180449"><strong>📞 Call Now</strong><span>(331) 218-0449</span></a>
-        <a href="https://www.google.com/maps/search/?api=1&query=700+S+Dubuque+St%2C+Iowa+City%2C+IA+52240" target="_blank" rel="noopener"><strong>📍 Location</strong><span>Get directions</span></a>
-      </div>
-    </section>
-
-    <section id="services" class="section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">OUR MENU</p>
-          <h2>Massage Services</h2>
-          <p>Choose the service and duration that best fits your needs.</p>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <div><h3>Signature Massage</h3><p>A relaxing full-body massage designed for comfort and renewal.</p></div>
-            <strong>$85 <small>/ 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Swedish Massage</h3><p>Gentle-to-moderate techniques focused on relaxation and circulation.</p></div>
-            <strong>$55 / $85 <small>/ 30 / 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Cupping Massage</h3><p>Cupping may be integrated into a massage session when appropriate.</p></div>
-            <strong>$65 / $95 <small>/ 30 / 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Deep Tissue Massage</h3><p>Focused massage with targeted trigger-point release techniques.</p></div>
-            <strong>$65 / $95 <small>/ 30 / 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Hot Stone Massage</h3><p>Warm stones are incorporated into a relaxing massage experience.</p></div>
-            <strong>$130 <small>/ 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Prenatal Massage</h3><p>A gentle massage option for pregnancy, subject to individual needs.</p></div>
-            <strong>$90 <small>/ 60 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Foot Reflexology</h3><p>Focused foot work for a relaxing and restorative experience.</p></div>
-            <strong>$50 <small>/ 30 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Facial Cupping</h3><p>A specialized facial cupping session focused on relaxation.</p></div>
-            <strong>$65 <small>/ 30 min</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Foot Massage + Head, Neck & Shoulder</h3><p>A combined session for feet, head, neck and shoulders.</p></div>
-            <strong>$300 / $450 / $550 <small>/ 1 / 1.5 / 2 hr</small></strong>
-          </article>
-          <article class="service-card">
-            <div><h3>Foot Spa + Head, Neck & Shoulder</h3><p>A longer foot-spa experience combined with head, neck and shoulder work.</p></div>
-            <strong>$500 <small>/ 1.5 hr</small></strong>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="booking" class="section dark-section">
-      <div class="container booking-layout">
-        <div>
-          <p class="eyebrow">APPOINTMENTS</p>
-          <h2>Request Your Appointment</h2>
-          <p>Complete the form and submit your request. Your appointment is not confirmed until KIM Massage Spa confirms it with you.</p>
-          <div class="notice">
-            <strong>Booking deposit:</strong> A first deposit of <strong>$50</strong> is required according to our booking terms.
-          </div>
-          <p class="small">For outcall requests, please provide the requested location. Please do not submit sensitive payment information through this form.</p>
-        </div>
-
-        <!-- Replace the action URL only if your Formspree form changes. Current form: mvkodvzo -->
-        <form class="booking-form" action="https://formspree.io/f/mvkodvzo" method="POST">
-          <input type="hidden" name="_subject" value="New KIM Massage Spa Appointment Request">
-          <input type="hidden" name="_next" value="https://kim-massage-spa.github.io/KIM-massage-spa/thank-you.html">
-
-          <label>Full Name
-            <input type="text" name="name" autocomplete="name" required>
-          </label>
-
-          <div class="form-row">
-            <label>Date
-              <input type="date" name="date" required>
-            </label>
-            <label>Preferred Time
-              <input type="time" name="time" required>
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label>Massage Service
-              <select name="service" required>
-                <option value="">Select a service</option>
-                <option>Signature Massage</option>
-                <option>Swedish Massage</option>
-                <option>Cupping Massage</option>
-                <option>Deep Tissue Massage</option>
-                <option>Hot Stone Massage</option>
-                <option>Prenatal Massage</option>
-                <option>Foot Reflexology</option>
-                <option>Facial Cupping</option>
-                <option>Foot Massage & Head, Neck, Shoulder</option>
-                <option>Foot Spa & Head, Neck, Shoulder</option>
-              </select>
-            </label>
-            <label>Duration
-              <select name="duration" required>
-                <option value="">Select duration</option>
-                <option>30 minutes</option>
-                <option>60 minutes</option>
-                <option>90 minutes</option>
-                <option>120 minutes</option>
-                <option>1.5 hours</option>
-                <option>2 hours</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="form-row">
-            <label>Number of Guests
-              <input type="number" name="guests" min="1" max="10" value="1" required>
-            </label>
-            <label>Appointment Type
-              <select name="appointment_type" id="appointmentType" required>
-                <option value="">Select one</option>
-                <option>Incall</option>
-                <option>Outcall</option>
-              </select>
-            </label>
-          </div>
-
-          <label id="locationField" class="hidden">Outcall Location
-            <input type="text" name="outcall_location" id="outcallLocation" placeholder="Enter requested location">
-          </label>
-
-          <label>Special Requests
-            <textarea name="special_requests" rows="4" placeholder="Tell us anything we should know about your appointment."></textarea>
-          </label>
-
-          <label>Payment Status
-            <select name="payment_status" required>
-              <option value="">Select one</option>
-              <option>Deposit not yet paid</option>
-              <option>Deposit paid</option>
-            </select>
-          </label>
-
-          <label class="checkbox">
-            <input type="checkbox" name="terms_agreement" value="I agree to the booking terms" required>
-            <span>I have read and agree to the booking terms and understand that submitting this form is a request, not a confirmed appointment.</span>
-          </label>
-
-          <button class="btn btn-gold full" type="submit">Send Appointment Request</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="container about">
-        <div class="about-card">
-          <p class="eyebrow">ABOUT KIM</p>
-          <h2>Your Time to Relax</h2>
-          <p>KIM Massage Spa provides a welcoming setting for clients looking for relaxation and massage services in Iowa City.</p>
-          <p>Our menu includes Swedish, deep tissue, signature, hot stone, prenatal, reflexology, cupping and specialty sessions.</p>
-          <a class="text-link" href="#booking">Request an appointment →</a>
-        </div>
-        <div class="about-image" role="img" aria-label="Relaxing massage spa room"></div>
-      </div>
-    </section>
-
-    <section id="policies" class="section policy-section">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">PLEASE READ</p>
-          <h2>Booking Terms & Conditions</h2>
-        </div>
-        <div class="policy-grid">
-          <article>
-            <h3>Deposit</h3>
-            <p>A first deposit payment of <strong>$50</strong> is required for a booking, according to the appointment terms provided by KIM Massage Spa.</p>
-          </article>
-          <article>
-            <h3>Appointment Confirmation</h3>
-            <p>Submitting an appointment request does not automatically confirm the appointment. KIM Massage Spa will review the request and confirm availability.</p>
-          </article>
-          <article>
-            <h3>Payment Methods</h3>
-            <p>Available payment methods may include Cash App, PayPal, Apple Pay, BTC and Chime. Confirm current payment instructions directly with KIM Massage Spa before sending funds.</p>
-          </article>
-          <article>
-            <h3>Changes & Cancellations</h3>
-            <p>Please contact KIM Massage Spa as soon as possible if you need to change or cancel a requested appointment. Any deposit or cancellation terms will be handled according to the booking arrangement.</p>
-          </article>
-          <article>
-            <h3>Outcall Requests</h3>
-            <p>Outcall availability depends on location and scheduling. Provide the requested location in the booking form for review.</p>
-          </article>
-          <article>
-            <h3>Questions</h3>
-            <p>For questions about services, pricing, deposits or appointments, contact KIM Massage Spa directly before making payment.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact-section">
-      <div class="container contact-grid">
-        <div>
-          <p class="eyebrow">CONTACT</p>
-          <h2>Get in Touch</h2>
-          <div class="contact-list">
-            <a href="tel:+15593385353"><span>Phone</span><strong>(559) 338-5353</strong></a>
-            <a href="tel:+13312180449"><span>Call Now</span><strong>(331) 218-0449</strong></a>
-            <a href="mailto:kimmassagespa2@gmail.com"><span>Email</span><strong>kimmassagespa2@gmail.com</strong></a>
-            <a href="https://www.instagram.com/kim_massage.spa/" target="_blank" rel="noopener"><span>Instagram</span><strong>@kim_massage.spa</strong></a>
-            <a href="https://www.google.com/maps/search/?api=1&query=700+S+Dubuque+St%2C+Iowa+City%2C+IA+52240" target="_blank" rel="noopener"><span>Address</span><strong>700 S Dubuque St, Iowa City, IA 52240</strong></a>
-          </div>
-        </div>
-        <div class="map-card">
-          <iframe
-            title="KIM Massage Spa location"
-            src="https://www.google.com/maps?q=700%20S%20Dubuque%20St%2C%20Iowa%20City%2C%20IA%2052240&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-wrap">
-      <div>
-        <div class="footer-brand">KIM MASSAGE SPA</div>
-        <p>Relax • Restore • Recharge</p>
-      </div>
-      <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#booking">Book</a>
-        <a href="#policies">Terms</a>
-        <a href="mailto:kimmassagespa2@gmail.com">Email</a>
-      </div>
-      <p class="copyright">© <span id="year"></span> KIM Massage Spa. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<section class="menu-section">
+<h2>✦ Therapeutic &amp; Specialty Massages</h2>
+<div class="table-wrap"><table><thead><tr><th>Service</th><th>Duration</th><th>Price</th></tr></thead>
+<tbody><tr><td>Signature Massage</td><td>60 min</td><td>$85.00</td></tr><tr><td>Swedish Massage</td><td>30 min / 60 min</td><td>$55.00 / $85.00</td></tr><tr><td>Cupping Massage</td><td>30 min / 60 min</td><td>$65.00 / $95.00</td></tr><tr><td>Deep Tissue Massage</td><td>30 min / 60 min</td><td>$65.00 / $95.00</td></tr><tr><td>Hot Stone Massage</td><td>60 min</td><td>$130.00</td></tr><tr><td>Prenatal Massage</td><td>60 min</td><td>$90.00</td></tr><tr><td>Foot Reflexology</td><td>30 min</td><td>$50.00</td></tr><tr><td>Facial Cupping</td><td>30 min</td><td>$65.00</td></tr></tbody></table></div>
+</section>
+<section class="menu-section">
+<h2>✦ Traditional Bodywork &amp; Herbal Care</h2>
+<div class="table-wrap"><table><thead><tr><th>Service</th><th>Duration</th><th>Price</th></tr></thead>
+<tbody><tr><td>Foot Massage &amp; Head, Neck, Shoulder</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$300 / $450 / $550</td></tr><tr><td>Foot Spa &amp; Head, Neck, Shoulder</td><td>1.5 hrs</td><td>$500</td></tr><tr><td>Head, Neck, Shoulder Relief</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$300 / $450 / $550</td></tr><tr><td>Traditional Thai Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$300 / $450 / $550</td></tr><tr><td>Thai Massage with Balm</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$400 / $550 / $750</td></tr><tr><td>Thai Mixed Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$450 / $650 / $800</td></tr><tr><td>Essential Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$450 / $650 / $800</td></tr><tr><td>Full Back Oil Relief</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$450 / $650 / $800</td></tr><tr><td>Thai Massage &amp; Hot Compress Ritual</td><td>2.0 hrs</td><td>$1,000</td></tr><tr><td>Oil Massage &amp; Hot Compress Ritual</td><td>2.0 hrs</td><td>$1,000</td></tr><tr><td>Aroma Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$550 / $800 / $1,000</td></tr><tr><td>Thai Mixed Oil &amp; Herbal Balm (3-in-1)</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$550 / $800 / $1,000</td></tr><tr><td>Radiant Facial Massage (5-Step Ritual)</td><td>1.0 hr</td><td>$600</td></tr><tr><td>Hot Oil Nourishing Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$600 / $850 / $1,100</td></tr><tr><td>Herbal Infused Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$600 / $850 / $1,100</td></tr><tr><td>Organic Coconut Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$600 / $850 / $1,100</td></tr><tr><td>Exfoliating Skin Scrub &amp; Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$600 / $850 / $1,100</td></tr><tr><td>Exfoliating Skin Scrub &amp; Aroma Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$650 / $900 / $1,200</td></tr><tr><td>Exfoliating Skin Scrub &amp; Coconut Oil Massage</td><td>1.0 hr / 1.5 hrs / 2.0 hrs</td><td>$650 / $900 / $1,200</td></tr></tbody></table></div>
+</section>
+<section class="menu-section">
+<h2>✦ Packages &amp; Special Events</h2>
+<div class="table-wrap"><table><thead><tr><th>Service</th><th>Duration</th><th>Price</th></tr></thead>
+<tbody><tr><td>Wellness Package</td><td>6 Sessions (2x / week)</td><td>$300.00</td></tr><tr><td>On-site Chair Massage</td><td>Available for corporate offices and special events</td><td>—</td></tr></tbody></table></div>
+</section>
+<div class="card"><h2>Payment</h2><p>A $50 deposit is required to secure and confirm every appointment. The deposit is applied toward the total cost of the scheduled massage service.</p>
+<div class="grid"><div class="method">Cash App</div><div class="method">PayPal</div><div class="method">Apple Pay</div><div class="method">Bitcoin (BTC)</div><div class="method">Chime</div></div>
+<p class="small">Please use the payment information provided directly by KIM Massage Spa.</p></div>
+<div class="card"><h2>Terms & Conditions</h2>
+<h3>1. Appointment Deposit</h3><p>A $50 deposit is required to secure and confirm every appointment. An appointment is not considered confirmed until the deposit has been received and acknowledged.</p>
+<h3>2. Deposit Policy</h3><p>The $50 deposit is applied toward the total cost of your scheduled massage service. Deposits are non-refundable in cases of no-shows or cancellations made without sufficient notice.</p>
+<h3>3. Rescheduling & Cancellation</h3><p>If you need to cancel or reschedule, please contact us as early as possible. Rescheduling is subject to availability. A new deposit may be required if an appointment is missed or canceled without adequate notice.</p>
+<h3>4. Appointment Confirmation</h3><p>After making your deposit, please send your payment confirmation/receipt along with your name, preferred appointment date and time, and requested service so we can confirm your booking.</p>
+<h3>5. Arrival</h3><p>Please arrive on time. Arriving late may reduce the available treatment time so that we can maintain the schedule for other clients.</p>
+<h3>6. Respect & Conduct</h3><p>KIM Massage Spa provides a professional and respectful environment. Clients are expected to treat staff respectfully. Inappropriate, abusive, or unlawful behavior will not be tolerated, and service may be refused or terminated.</p>
+<h3>7. Remaining Balance</h3><p>Any remaining balance after the $50 deposit must be paid according to the payment arrangements provided by KIM Massage Spa.</p>
+<h3>8. Policy Acceptance</h3><p>By submitting a deposit and booking an appointment, you acknowledge that you have read, understood, and agreed to these Terms & Conditions.</p>
+</div>
+<div class="card" style="text-align:center"><h2>Book Your Escape Today</h2><p>Ready to relax? Message KIM Massage Spa on WhatsApp to request your appointment.</p><a class="cta wa" href="https://wa.me/15593385353?text=Hello%20KIM%20Massage%20Spa%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">💬 Book Appointment on WhatsApp</a><p class="small">WhatsApp: (559) 338-5353</p></div>
+</main><footer>© KIM Massage Spa • Relax • Rejuvenate • Restore</footer>
+</body></html>
